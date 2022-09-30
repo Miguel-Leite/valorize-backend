@@ -1,0 +1,11 @@
+{
+    "skip": false,
+    "type": "sqlite",
+    "database": "src/database/database.sqlite",
+    "migrations": ["src/database/migrations/*.ts"],
+    "logging": false,
+    "relationLoadStrategy": "join",
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+}
