@@ -6,8 +6,12 @@
     "scripts": {
         "dev": "ts-node-dev src/server.ts",
         "typeorm": "typeorm-ts-node-esm",
+        "migration:revert": "typeorm-ts-node-commonjs -d ./src/database/connection.ts migration:revert",
         "migration:generaste": "typeorm-ts-node-commonjs -d ./src/database/connection.ts migration:generate ./src/database/migrations",
-        "migration:run": "typeorm-ts-node-commonjs -d ./src/database/connection.ts migration:run"
+        "migration:run": "typeorm-ts-node-commonjs -d ./src/database/connection.ts migration:run",
+        "cli": {
+            "migrationsDir": "./src/database/migrations"
+        }
     },
     "keywords": [],
     "author": "",
