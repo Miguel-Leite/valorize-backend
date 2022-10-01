@@ -3,7 +3,7 @@
 # Regras
 #### Cadastro de usuário
 - [x] Não é permitido cadastrar mais de um usuário com oo mesmo e-mail
-- [ ] Não é permitido cadastrar usuário sem e-mail
+- [x] Não é permitido cadastrar usuário sem e-mail
 
 #### Cadastro de TAG
 - [ ] Não é permitido cadastrar mais de uma tag com mesmo nome
