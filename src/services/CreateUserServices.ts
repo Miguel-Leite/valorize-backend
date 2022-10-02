@@ -1,17 +1,11 @@
+import { IUserRequest } from "../@types/IUserRequest";
 import { AppDataSource } from "../database/data-source";
 import { User } from "../entities/User.entity";
-
-interface IUserRequest {
-    name: string,
-    email: string,
-    admin?: boolean
-}
 
 class CreateUserServices {
 
     async execute({ name, email, admin } : IUserRequest) {
         const usersRepository = AppDataSource.getRepository(User);
-        console.log("Email",email)
         if (!email) {
             throw new Error("E-mail incorrect");
         }
