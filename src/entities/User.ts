@@ -1,5 +1,13 @@
-import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn  } from "typeorm"
+import { 
+    Entity, 
+    PrimaryColumn, 
+    Column, 
+    CreateDateColumn, 
+    UpdateDateColumn  
+} from "typeorm";
+
 import { v4 as uui } from 'uuid'
+
 @Entity("users")
 class User {
 
