@@ -1,5 +1,5 @@
 import { EntityRepository, Repository } from "typeorm";
-import { Tag } from "../entities/Tag";
+import { Tag } from "../entities/Tag.entity";
 
 @EntityRepository(Tag)
 class TagsRepositories extends Repository<Tag> {}

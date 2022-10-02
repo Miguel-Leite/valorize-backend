@@ -1,7 +1,7 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from "typeorm"
 import { v4 as uui } from 'uuid'
 
-@Entity()
+@Entity("tags")
 export class Tag {
     @PrimaryColumn()
     readonly id: string;

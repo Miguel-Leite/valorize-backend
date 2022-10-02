@@ -1,5 +1,5 @@
 import { AppDataSource } from "../database/data-source";
-import { Tag } from "../entities/Tag";
+import { Tag } from "../entities/Tag.entity";
 
 
 

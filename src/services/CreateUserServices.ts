@@ -1,6 +1,6 @@
 import { IUserRequest } from "../@types/IUserRequest";
 import { AppDataSource } from "../database/data-source";
-import { User } from "../entities/User";
+import { User } from "../entities/User.entity";
 
 class CreateUserServices {
 
