@@ -5,7 +5,15 @@ import { hash } from 'bcryptjs'
 
 class CreateUserServices {
 
-    async execute({ name, email, admin, password } : IUserRequest) {
+    async all() {
+        const usersRepository = AppDataSource.getRepository(User);
+
+        const user = await usersRepository.find();
+
+        return user;
+    }
+
+    async execute({ name, email, admin = false, password } : IUserRequest) {
         const usersRepository = AppDataSource.getRepository(User);
         if (!email) {
             throw new Error("E-mail incorrect");
