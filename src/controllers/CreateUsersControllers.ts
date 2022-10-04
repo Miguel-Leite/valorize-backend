@@ -3,6 +3,14 @@ import { CreateUserServices } from '../services/CreateUserServices';
 
 class CreateUserController {
 
+    async get (request: Request, response: Response) {
+        const createUserService = new CreateUserServices();
+        const users = await createUserService.all()
+        return response.json({
+            data: users
+        })
+    }
+
     async handle(request: Request, response: Response) {
         const { name, email, admin, password } = request.body;
 
