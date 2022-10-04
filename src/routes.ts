@@ -17,6 +17,6 @@ router.post('/tags', ensureAuthenticated, ensureAdmin, createTagController.handl
 router.get('/users', createUsersController.get);
 router.post('/users', createUsersController.handle);
 router.post('/login', authenticateUserController.handle);
-router.post('/compliments', createComplimentController.handle);
+router.post('/compliments', ensureAuthenticated, createComplimentController.handle);
 
 export { router }
