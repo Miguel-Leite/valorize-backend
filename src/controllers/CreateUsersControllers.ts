@@ -2,7 +2,7 @@ import {Request, Response} from 'express'
 import { CreateUserServices } from '../services/CreateUserServices';
 
 class CreateUserController {
-
+ 
     async get (request: Request, response: Response) {
         const createUserService = new CreateUserServices();
         const users = await createUserService.all()
