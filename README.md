@@ -4,6 +4,7 @@
 #### Cadastro de Usuário
 - [x] Não é permitido cadastrar mais de um usuário com oo mesmo e-mail
 - [x] Não é permitido cadastrar usuário sem e-mail
+- [x] Listar todos usuários (O usuário deve estar autenticado)
 
 #### Cadastro de Tag
 - [x] Não é permitido cadastrar mais de uma tag com mesmo nome
